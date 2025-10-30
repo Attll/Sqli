@@ -1,0 +1,90 @@
+{
+  "false_positives": [
+    {
+      "query": "oruna",
+      "probability": 0.7231922612321504
+    },
+    {
+      "query": "tyler",
+      "probability": 0.5302537191307545
+    },
+    {
+      "query": "69 47164 f6 reply f6 1568 0 csdf1123mvwbhk = 9 134 e_qna eng modify 38 22747 22747 3945 556 v gallery2 view 366 3 f1 read f1 8628 80 sub0204 photo optoma 218 30 02_01 1091 wr_datetime asc 2 sub0203 photo e_qna eng 8 18489 bbs338 12 view 132",
+      "probability": 0.8509652198267817
+    },
+    {
+      "query": "select * from users where name = \"\" or \"\" = \"\" and pass = \"\" or \"\" = \"\"",
+      "probability": 0.761045227451561
+    },
+    {
+      "query": "brunton9",
+      "probability": 0.6945931138675617
+    },
+    {
+      "query": "select sec_to_time ( 1 ) ;",
+      "probability": 0.6366341072711769
+    },
+    {
+      "query": "sandler",
+      "probability": 0.7019278547281542
+    },
+    {
+      "query": "inoportunamente",
+      "probability": 0.999954761801759
+    }
+  ],
+  "false_negatives": [
+    {
+      "query": "tz_offset",
+      "probability": 0.005894495285379165
+    },
+    {
+      "query": "print",
+      "probability": 0.003438841134147934
+    },
+    {
+      "query": "0x77616974666f722064656c61792027303a303a313027 ...",
+      "probability": 0.3655757837056565
+    },
+    {
+      "query": "ue1",
+      "probability": 0.03360698189857978
+    },
+    {
+      "query": "exec sp",
+      "probability": 0.20582736836399695
+    },
+    {
+      "query": "( case when 2646 = 8520 then 2646 else null end )",
+      "probability": 0.33133588491306964
+    },
+    {
+      "query": "@variable",
+      "probability": 0.44866575562238314
+    },
+    {
+      "query": "or",
+      "probability": 0.005596346791805825
+    },
+    {
+      "query": "insert",
+      "probability": 0.003438841134147934
+    },
+    {
+      "query": "end if",
+      "probability": 0.0058267639724121694
+    },
+    {
+      "query": "create user name identified by pass123 temporary tablespace temp default tablespace users;",
+      "probability": 0.0046918739754957944
+    },
+    {
+      "query": "or username is not null or username = '",
+      "probability": 0.005723078378518295
+    },
+    {
+      "query": "uev",
+      "probability": 0.4830755850387012
+    }
+  ]
+}
