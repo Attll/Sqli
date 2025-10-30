@@ -1,0 +1,64 @@
+# Core ML Libraries
+numpy
+pandas
+scikit-learn
+scipy
+
+# Deep Learning (optional)
+#tensorflow
+torch
+
+# XAI Libraries
+lime
+shap
+
+# Web Framework
+#flask
+#flask-cors
+#flask-sqlalchemy
+
+# Alternative: FastAPI
+fastapi
+uvicorn[standard] # Adds standard server dependencies
+
+# Database
+pymysql
+psycopg2-binary
+sqlalchemy
+
+# Data Processing
+joblib
+pickle-mixin
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Text Processing
+nltk
+regex
+
+# API & Middleware
+requests
+werkzeug
+
+# Logging & Monitoring
+python-dotenv
+colorlog
+
+# Testing
+pytest
+pytest-cov
+
+# Utilities
+tqdm
+python-dateutil
+
+# Jupyter (for analysis)
+jupyter
+ipywidgets
+
+# Build tools (Good to have explicitly)
+setuptools
+wheel
