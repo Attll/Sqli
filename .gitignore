@@ -1,0 +1,17 @@
+.vscode/
+.env
+.env.local
+venv/ 
+env/
+__pycache__/
+*.pyc
+*.csv
+*.db
+*.sqlite3
+*.log
+logs/
+*.pkl
+*.h5
+*joblib
+requrements.txt
+.venv/
