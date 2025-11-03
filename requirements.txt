@@ -13,9 +13,9 @@ lime
 shap
 
 # Web Framework
-#flask
-#flask-cors
-#flask-sqlalchemy
+flask
+flask-cors
+flask-sqlalchemy
 
 # Alternative: FastAPI
 fastapi

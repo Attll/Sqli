@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #007bff;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --dark-color: #343a40;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+.jumbotron {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.card {
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+.detection-result {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.detection-blocked {
+    background-color: #f8d7da;
+    border: 2px solid #dc3545;
+}
+.detection-allowed {
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+}
+.query-display {
+    background: #272822; /* Monokai background */
+    color: #f8f8f2;     /* Monokai text */
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    font-family: 'Courier New', monospace;
+    margin: 10px 0;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+.confidence-bar {
+    height: 30px;
+    background: linear-gradient(to right, #28a745, #ffc107, #dc3545);
+    border-radius: 15px;
+    position: relative;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.confidence-indicator {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #000;
+    transition: left 0.3s;
+    box-shadow: 0 0 5px #fff;
+}

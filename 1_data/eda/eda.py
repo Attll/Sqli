@@ -7,7 +7,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 plt.style.use('seaborn-v0_8')
-%matplotlib inline
 
 df=pd.read_csv('../../1_data/dataset/sqli.csv')
 
@@ -41,23 +40,27 @@ df['query_length'] = df['Query'].str.len()
 
 plt.figure(figsize=(12, 5))
 plt.subplot(1, 2, 1)
-df[df['Label']==0]['query_length'].hist(bins=50, alpha=0.7, label='Normal')
-df[df['Label']==1]['query_length'].hist(bins=50, alpha=0.7, label='SQLi')
+sns.kdeplot(df[df['Label']==0]['query_length'], color='navy', fill=True, alpha=0.4, label='Normal')
+sns.kdeplot(df[df['Label']==1]['query_length'], color='crimson', fill=True, alpha=0.4, label='SQLi')
+
+plt.xlim(0, 500)
 plt.xlabel('Query Length')
-plt.ylabel('Frequency')
-plt.legend()
+plt.ylabel('Density')
 plt.title('Query Length Distribution')
+plt.legend()
+plt.show()
 
 plt.subplot(1, 2, 2)
 sns.boxplot(data=df, x='Label', y='query_length')
 plt.title('Query Length by Label')
+plt.ylim(0, 500)
 plt.show()
 
 sqli_queries = df[df['Label']==1]['Query']
 
 keywords = ['union', 'select', 'drop', 'insert', 'delete', 
             'update', 'or', 'and', '--', '/*', '*/', 
-            'exec', 'execute', 'script', 'javascript']
+            'exec']
 
 keyword_counts = {}
 for keyword in keywords:

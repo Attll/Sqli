@@ -15,3 +15,7 @@ logs/
 *joblib
 requrements.txt
 .venv/
+*.html
+*.png
+2_model/xai/lime_explanations/
+2_model/xai/shap_explanations/
